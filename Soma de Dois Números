@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Soma</title>
+</head>
+<body>
+ <input type="text" id="soma1" maxlength="5"><br><br>
+ <input type="text" id="soma2" maxlength="5"><br><br>
+ <button id="btn">Resultado</button><br><br>
+ <input type="text" id="resultado" maxlength="5">
+ <script>
+  const soma1 = document.getElementById('soma1');
+  const soma2 = document.getElementById('soma2');
+  const resultado = document.getElementById('resultado');
+  const btn = document.getElementById('btn');
+  btn.addEventListener('click', () => {
+    const num1 = parseInt(soma1.value);
+    const num2 = parseInt(soma2.value);
+    const sum = num1 + num2;
+    resultado.value = sum;
+  });
+ </script>
+</body>
+</html>
